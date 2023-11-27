@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "number": "+38 (063) 98-75-615",
+      "registerText": "Regístrate y obtén",
+      "cuponText": "cupones de descuento",
+      "boton1": "Comprar ahora",
+      "boton2": "Registrarse",
+      "owner": "Sr. Chef"
+    }
+  ],
+  "checkout": [
+    {
+      "id": 1,
+      "number": "+38 (063) 98-75-615",
+      "title": "Pagar",
+      "subtitle": "Para un pedido rápido, simplemente llame a nuestro número de teléfono de oficina",
+      "deTitle": "Condiciones de entrega",
+      "deOp1": "Entrega",
+      "deOp2": "Pasar a Retirar",
+      "adTitle": "Dirección de entrega",
+      "adPhone": "Número de teléfono",
+      "adStreet": "Calle",
+      "adHouse": "Número de casa (apartamento)",
+      "adEntrance": "Entrada",
+      "adCheck": "Casa privada",
+      "adComment": "Comentario para el pedido",
+      "textDropTitle": "Elegir un cupón",
+      "textDropTitleChange": "De un solo uso",
+      "titlePay": "Condiciones de pago",
+      "payOp1": "Tarjeta de crédito",
+      "payOp2": "Efectivo"
+    }
+  ]
+}

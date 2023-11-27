@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0,0,256,256" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#606676" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+    <g transform="scale(10.66667,10.66667)">
+      <path d="M 12 2 C 6.489 2 2 6.489 2 12 C 2 17.511 6.489 22 12 22 C 17.511 22 22 17.511 22 12 C 22 6.489 17.511 2 12 2 Z M 12 4 C 16.43 4 20 7.57 20 12 C 20 16.43 16.43 20 12 20 C 7.57 20 4 16.43 4 12 C 4 7.57 7.57 4 12 4 Z" style="fill: #606676;"/>
+    </g>
+  </g>
+</svg>
