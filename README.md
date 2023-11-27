@@ -25,13 +25,12 @@ Datos:
 
 ### Diseño Front
 
-NAVBAR - Login -Register -Carrito/Bolso -Check Out -Cupons (Pablo - Ramiro)
-HERO (Ramiro)
-CARDS -Menu -SubMenu (Viviana)
-CONTACT - Wave -Iframe map (Lautaro)
-ABOUT US (Pablo)
-FOOTER  (Juan) 
-
+- NAVBAR - Login -Register -Carrito/Bolso -Check Out -Cupons (Pablo - Ramiro)
+- HERO (Ramiro)
+- CARDS -Menu -SubMenu (Viviana)
+- CONTACT - Wave -Iframe map (Lautaro)
+- ABOUT US (Pablo)
+- FOOTER  (Juan) 
 
 
 ### Base de datos
