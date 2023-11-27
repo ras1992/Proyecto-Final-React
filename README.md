@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# Proyecto-Final-React
+
+
+>>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
 ### /-------------------------------------------Link-------------------------------------------/
 
 Link: https://
@@ -20,6 +26,7 @@ Datos:
 - Toda persona puede registrarse y hacer uso de la plataforma. 
 - El usuario puede registrarse con un nombre, correo electronico y contraseña.
 
+<<<<<<< HEAD
 ### /--------------------------------------- Diseño Front ---------------------------------------/
 
 NAVBAR - Login -Register -Carrito/Bolso -Check Out -Cupons (Pablo - Ramiro)
@@ -28,6 +35,8 @@ CARDS -Menu -SubMenu (Viviana)
 CONTACT - Wave -Iframe map (Lautaro)
 ABOUT US (Pablo)
 FOOTER  (Juan) 
+=======
+>>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
 
 ### /---------------------------------------Base de datos---------------------------------------/
 Mongo Atlas
@@ -166,4 +175,7 @@ Aquí tienes ejemplos de datos para las entidades principales: carrito, categor�
   "descuento": 5,
   "cupon": "655f9c07875581bd262af75a"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
