@@ -283,8 +283,6 @@ const NavBar = () => {
                           }
                         }}
                       />
-
-
                       <button onClick={() => { search(searchCampo) }} className="absolute right-0 top-0 mt-5 mr-4">
                         <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                           version="1.1" id="Capa_1" x="0px" y="0px"

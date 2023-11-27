@@ -26,7 +26,7 @@ Datos:
 ### Diseño Front
 
 - NAVBAR - Login -Register -Carrito/Bolso -Perfil (Pablo)
-- HERO -Check Out -Cupons -Search (Ramiro)
+- HERO -Check Out -Cupons -Search - loading (Ramiro)
 - CARDS -Menu -SubMenu (Viviana)
 - CONTACT - Wave -Iframe map (Lautaro)
 - ABOUT US (Pablo)

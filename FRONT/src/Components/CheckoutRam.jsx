@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './CheckoutRam'
 import { Link } from "react-router-dom"
-
+import { Icon } from '@iconify/react';
+import iconTarjeta from '/img/checkOut/icons8-tarjeta-en-uso-50.png'
+import iconDinero from '/img/checkOut/icons8-dinero-30.png'
 import Select from 'react-select'
 
 
@@ -707,15 +709,16 @@ const Checkout = () => {
                                 <div className='bg-white 2xl:p-4 rounded-lg h-full'>
                                     <strong>{dataText.titlePay}</strong>
                                     <div className='flex flex-row place-content-around  2xl:items-center'>
-                                        <Link onClick={() => setPagoModal(!pagoModal)} className='bg-gray-500  w-28 h-18 rounded-lg '>
-                                            <div className='w-8 h-8 bg-green-500'></div>
-                                            <div>{dataText.payOp1}</div>
 
+                                        <Link onClick={() => setPagoModal(!pagoModal)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-38 h-18 rounded-lg flex items-center'>
+                                            <img className='w-8 h-8 mr-2' src={iconTarjeta} alt="Tarjeta" />
+                                            {dataText.payOp1}
                                         </Link>
-                                        <Link className='bg-red-500 w-28 h-18 rounded-lg '>
-                                            <div className='w-8 h-8 bg-green-500'></div>
-                                            <div>{dataText.payOp2}</div>
 
+
+                                        <Link to="/404" className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 w-38 h-18 rounded-lg flex items-center'>
+                                            <img className='w-8 h-8 mr-2' src={iconDinero} alt="Efectivo" />
+                                            {dataText.payOp2}
                                         </Link>
                                     </div>
 

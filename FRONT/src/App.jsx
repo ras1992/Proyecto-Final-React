@@ -13,30 +13,51 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import { NotFound } from './Components/NotFound';
 import { Search } from './Components/Search';
+import React, { useState, useEffect } from 'react';
 
 /* //import { Checkout } from './Components/CheckoutRam'; */
 
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Activa el loading al iniciar la página
+    setIsLoading(true);
+
+    // Desactiva el loading después de 6 segundos
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 4300);
+
+    // Limpia el timeout al desmontar el componente para evitar posibles problemas
+    return () => clearTimeout(timeoutId);
+  }, []); // El array de dependencias está vacío, por lo que este efecto solo se ejecutará al montar el componente
+
   return (
     <div className='App'>
-
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={
-            <div>
+         
+          <Route
+            path='/'
+            element={
+              <div>
+                {isLoading && <Loading />}
+                {!isLoading && <div>
+                    <NavBar />
+                    <Hero />
+                    <Menu></Menu>
+                    <About />
+                    <Contact />
+                    <Footer />
+                </div> }
+                  
+              </div>
+            }
+          />
 
-              <NavBar />
-              <Hero />
-              <Menu></Menu>
-
-              <About />
-
-              <Contact />
-
-              <Footer />
-            </div>
-          } />
           <Route path='/login' element={
             <div>
               <NavBar />
@@ -99,22 +120,22 @@ function App() {
           <Route path='/search' element={
             <div>
               <NavBar />
-              <Search/>
+              <Search />
               <Footer />
             </div>
           } />
 
-        <Route path='/404' element={
-          <div>
-            <NavBar />
-            <NotFound />
-            <Footer />
-          </div>
-        } />
+          <Route path='/404' element={
+            <div>
+              <NavBar />
+              <NotFound />
+              <Footer />
+            </div>
+          } />
 
-      </Routes>
-    </BrowserRouter>
-      
+        </Routes>
+      </BrowserRouter>
+
     </div >
 
 
