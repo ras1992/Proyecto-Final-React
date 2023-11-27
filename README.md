@@ -59,7 +59,7 @@ Esta es una API para gestionar un sistema de E-commerce con funcionalidades como
 
 ### Categorías
 
-- `GET /obtener Categorias`: Obtiene todas las categorías.
+- `GET /obtenerCategorias`: Obtiene todas las categorías.
 - `GET /obtenerCategoria/:id`: Obtiene una categoría específica por ID.
 - `POST /cargarCategoria`: Crea una nueva categoría.
 - `DELETE /eliminarCategoria/:id`: Elimina una categoría por ID.
