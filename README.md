@@ -1,33 +1,29 @@
-<<<<<<< HEAD
-=======
 # Proyecto-Final-React
 
-
->>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
-### /-------------------------------------------Link-------------------------------------------/
+### Link
 
 Link: https://
 
-### /---------------------------------------Recomendación--------------------------------------/
+### Recomendación
 
 Tener activado el uso de Cache en el explorador para el correcto funcionamiento de la pagina.
 Tamaño maximo de pantalla recomendado 1440px
 Tamaño optimo de pantalla 1440px
 
-### /--------------------------------------Venta de Comida-------------------------------------/
+### Venta de Comida
 
 Datos:
 
 - Todos los datos cargados fueron generados y son ficticios
 
 
-### /--------------------------------------- Usuarios ---------------------------------------/
+### Usuarios
 
 - Toda persona puede registrarse y hacer uso de la plataforma. 
 - El usuario puede registrarse con un nombre, correo electronico y contraseña.
 
-<<<<<<< HEAD
-### /--------------------------------------- Diseño Front ---------------------------------------/
+
+### Diseño Front
 
 NAVBAR - Login -Register -Carrito/Bolso -Check Out -Cupons (Pablo - Ramiro)
 HERO (Ramiro)
@@ -35,10 +31,10 @@ CARDS -Menu -SubMenu (Viviana)
 CONTACT - Wave -Iframe map (Lautaro)
 ABOUT US (Pablo)
 FOOTER  (Juan) 
-=======
->>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
 
-### /---------------------------------------Base de datos---------------------------------------/
+
+
+### Base de datos
 Mongo Atlas
 uri: 
 
@@ -175,7 +171,4 @@ Aquí tienes ejemplos de datos para las entidades principales: carrito, categor�
   "descuento": 5,
   "cupon": "655f9c07875581bd262af75a"
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 54e4af8139b11435ee3d08d4bca68098109aeca4
