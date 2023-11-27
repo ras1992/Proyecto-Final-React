@@ -27,7 +27,7 @@ const NavBar = () => {
   const [perfilVisible, setPerfilVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [searchCampo, setSearchCampo] = useState("");
-  
+
 
   //envio datos
   const dispatch = useDispatch();
@@ -168,10 +168,17 @@ const NavBar = () => {
           <nav className='flex items-center flex-col justify-center'>
             <div className="pt-2 absolute top-1 mx-auto text-gray-600">
               <input className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none xs:px-3"
-                type="search" name="search" placeholder="Search" onChange={(e) => setSearchCampo(e.target.value)} />
+                type="" name="search" placeholder="Busqueda..."
+                onChange={(e) => setSearchCampo(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    search(searchCampo);
+                  }
+                }}
+              />
 
 
-              <button onClick={()=>{search(searchCampo)}} className="absolute right-0 top-0 mt-5 mr-4">
+              <button onClick={() => { search(searchCampo) }} className="absolute right-0 top-0 mt-5 mr-4">
                 <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                   version="1.1" id="Capa_1" x="0px" y="0px"
                   viewBox="0 0 56.966 56.966"
@@ -267,9 +274,18 @@ const NavBar = () => {
                       </Menu.Item>
                     ))}
                     <div className="pt-2 relative top-1 mx-auto text-gray-600 flex justify-center">
-                      <input className="border-2 border-gray-300 bg-white mb-2 rounded-lg text-sm focus:outline-none"
-                        type="search" name="search" placeholder="Search" />
-                      <button onClick={()=>{search(searchCampo)}} className="absolute right-0 top-0 mt-5 mr-6">
+                      <input className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none xs:px-3"
+                        type="" name="search" placeholder="Busqueda..."
+                        onChange={(e) => setSearchCampo(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            search(searchCampo);
+                          }
+                        }}
+                      />
+
+
+                      <button onClick={() => { search(searchCampo) }} className="absolute right-0 top-0 mt-5 mr-4">
                         <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                           version="1.1" id="Capa_1" x="0px" y="0px"
                           viewBox="0 0 56.966 56.966"
@@ -309,7 +325,7 @@ const NavBar = () => {
             <Link onClick={() => usuarioId !== "" && setPerfilVisible(!perfilVisible)} className='mr-4 border-2  border-gray-600 px-6 py-1 rounded-2xl sm:px-2 sm:mr-2 sm:ml-3 xs:ml-1 xs:mr-1'>{usuarioId == "" ? "Login" : "Perfil"}</Link>
 
             <div>
-              <div className="relative" onClick={() => usuarioId !== "" && setIsBagDropdownVisible(!isBagDropdownVisible)}>
+              <div id="carritoBolsa" className="relative" onClick={() => usuarioId !== "" && setIsBagDropdownVisible(!isBagDropdownVisible)}>
                 <Icon icon="uil:shopping-bag" width="40" />
                 <div className="absolute top-3 right-2 w-6 h-6 rounded-full flex items-center justify-center text-black text-xs font-bold cursor-pointer">
                   {carrito.length}

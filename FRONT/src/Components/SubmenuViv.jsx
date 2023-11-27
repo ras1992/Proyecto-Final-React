@@ -49,7 +49,7 @@ const Submenu = () => {
 
 
 
-  const handleBotonClick = async (productoId, usuarioId, quantity) => {
+  const handleBotonClick = async (key, productoId, usuarioId, quantity) => {
     if (botonClick) {
       return; // Evitar múltiples clics simultáneos
     }
@@ -58,11 +58,26 @@ const Submenu = () => {
       setBotonClick(false);
     }, 1000);
 
-    const img = document.getElementById('imageId');
+    const img = document.getElementById(key);
     if (img) {
-      img.style.transform = 'translate(50vw, -50vh)';
+      const carrito = document.getElementById('carritoBolsa');
+      const rectProducto = img.getBoundingClientRect();
+      const rectCarrito = carrito.getBoundingClientRect();
+
+      const traslacionX = rectCarrito.left - rectProducto.left;
+      const traslacionY = rectCarrito.top - rectProducto.top;
+      console.log(traslacionX, traslacionY)
+
+      img.style.transform = `translate(${traslacionX}vw, ${traslacionY}vh)`;
+      img.style.opacity = '0.5';
+      img.style.scale = '0.2';
     }
 
+    setTimeout(() => {
+      img.style.transform = 'translate(0, 0)';
+      img.style.opacity = '1';
+      img.style.scale = '1';
+    }, 700)
 
     try {
 
@@ -153,11 +168,11 @@ const Submenu = () => {
 
   return (
     <>
-      <div className="text-center text-4xl p-4">
+      <div className="text-center text-4xl font-lobster p-4 mb-20 text-blue-950 mt-4 sm:text-3xl m-8">
         {categoria.nombreCategoria}
       </div>
 
-      <div className="grid grid-cols-4 gap-4 m-4 pt-6">
+      <div className="grid grid-cols-4 2xl:grid-cols-4 xl:grid-cols-3 xxl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8 pt-8 m-8">
         {data.map((data, key) => (
           <div
             key={key}
@@ -171,7 +186,7 @@ const Submenu = () => {
               <span className="text-2xl">{data.pesoProducto} g</span>
             </div>
             <div className=" absolute top-0 right-0 w-full p-2 bg-gray-800 rounded-xl text-white text-center hover:opacity-0">
-              <img id="imageId" className={`w-40 h-40 rounded-full -mt-16 ml-8 ${botonClick ? 'transform transition-transform duration-700' : ''}`} src={data.imgUrlProducto} alt="" />
+              <img id={key} className={`w-40 h-40 rounded-full -mt-16 ml-8 ${botonClick ? 'transform transition-transform duration-700' : ''}`} src={data.imgUrlProducto} alt="" />
               <p className="mt-2 text-sm text-gray-400">{categoria.nombreCategoria}</p>
               <p className="text-2xl">{data.nombreProducto}</p>
               <p className="text-2xl pt-2" >
@@ -184,7 +199,7 @@ const Submenu = () => {
             <button className={`py-2 px-4 mt-10 inline-flex items-center font-sans text-xm text-black bg-white rounded-lg border-2 border-black transition duration-300 ${botonClick ? 'bg-orange-700' : 'hover:bg-yellow-400 '}`}
               onClick={(e) => {
                 e.preventDefault();
-                handleBotonClick(data._id, usuarioId, 1)
+                handleBotonClick(key, data._id, usuarioId, 1)
               }}
               disabled={data.stockProducto <= 10 ? 'disable' : ''}
             >

@@ -6,9 +6,9 @@ Link: https://
 
 ### Recomendación
 
-Tener activado el uso de Cache en el explorador para el correcto funcionamiento de la pagina.
-Tamaño maximo de pantalla recomendado 1440px
-Tamaño optimo de pantalla 1440px
+Tener activado el uso de Cache en el explorador para el correcto funcionamiento de la página.
+Tamaño máximo de pantalla recomendado 1440px
+Tamaño óptimo de pantalla 1024px
 
 ### Venta de Comida
 
@@ -20,18 +20,28 @@ Datos:
 ### Usuarios
 
 - Toda persona puede registrarse y hacer uso de la plataforma. 
-- El usuario puede registrarse con un nombre, correo electronico y contraseña.
+- El usuario puede registrarse con un nombre, correo electrónico y contraseña.
 
 
 ### Diseño Front
 
-- NAVBAR - Login -Register -Carrito/Bolso -Check Out -Cupons (Pablo - Ramiro)
-- HERO (Ramiro)
+- NAVBAR - Login -Register -Carrito/Bolso -Perfil (Pablo)
+- HERO -Check Out -Cupons -Search (Ramiro)
 - CARDS -Menu -SubMenu (Viviana)
 - CONTACT - Wave -Iframe map (Lautaro)
 - ABOUT US (Pablo)
 - FOOTER  (Juan) 
 
+- Líder Diseño (Pablo)
+
+- Control de calidad (Pablo)
+
+### Diseño Back
+
+- Líder Diseño (Ramiro)
+- Ejecución (Ramiro, Lautaro)
+
+- Control de calidad (Lautaro, Juan)
 
 ### Base de datos
 Mongo Atlas
@@ -46,7 +56,7 @@ Esta es una API para gestionar un sistema de E-commerce con funcionalidades como
 
 ### Categorías
 
-- `GET /obtenerCategorias`: Obtiene todas las categorías.
+- `GET /obtener Categorias`: Obtiene todas las categorías.
 - `GET /obtenerCategoria/:id`: Obtiene una categoría específica por ID.
 - `POST /cargarCategoria`: Crea una nueva categoría.
 - `DELETE /eliminarCategoria/:id`: Elimina una categoría por ID.
@@ -154,7 +164,7 @@ Aquí tienes ejemplos de datos para las entidades principales: carrito, categor�
   "entrance": "porton 55555",
   "commentOrder": "hay un loco gritando viva boca",
   "housePrivate": false,
-  "puntosCompras": 99971,
+  "puntosCompras": 20971,
   "cuponesUsados": []
 }
 
@@ -170,4 +180,5 @@ Aquí tienes ejemplos de datos para las entidades principales: carrito, categor�
   "descuento": 5,
   "cupon": "655f9c07875581bd262af75a"
 }
+
 

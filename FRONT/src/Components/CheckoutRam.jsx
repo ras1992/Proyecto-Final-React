@@ -495,7 +495,10 @@ const Checkout = () => {
             <div>
 
                 <div className='2xl:p-4'>
-                    back to <strong>Home</strong>
+                    <Link to="/">
+                        Volver a <strong>Inicio</strong>
+                    </Link>
+
                 </div>
                 {pagoModal && carrito.length >= 1 ? (
                     <div className="min-h-screen flex items-center justify-center">
@@ -648,7 +651,7 @@ const Checkout = () => {
                                                 </div>
 
                                             ))}
-                                            
+
                                         </div>
                                     )}
 
