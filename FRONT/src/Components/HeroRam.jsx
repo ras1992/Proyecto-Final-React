@@ -42,26 +42,6 @@ const Hero = () => {
     }, [])
 
     useEffect(() => {
-        // const obtenerCategorias=async()=>{
-        //     await fetch('http://localhost:5172/api/menu/obtenerCategorias', {
-        //         method: "GET",
-        //         credentials: 'include',
-        //     })
-        //         .then(response => {
-        //             if (!response.ok) {
-        //                 throw new Error('no se conecto')
-        //             }
-        //             return response.json()
-        //         })
-        //         .then(data => {
-
-        //             const updatedData = data
-        //             setCategorias(updatedData);
-
-
-        //         })
-        //         .catch(error => console.error('Error no se pudo obtener:', error))
-        // }
 
         const obtenerProductos = async () => {
             await fetch('http://localhost:5172/api/menu/obtenerProductos', {
@@ -98,10 +78,6 @@ const Hero = () => {
                 .catch(error => console.error('Error no se pudo obtener:', error))
         }
 
-        // obtenerCategorias()
-        //     .then(() => console.log("paso1"))
-        //     .catch((error) => console.log(error))
-        //Agrega al usuario el cupon usado
         obtenerProductos()
             .then(() => console.log("paso2"))
             .catch((error) => console.log(error))
@@ -286,7 +262,7 @@ const Hero = () => {
                     <div className=''>
                         <motion.img
                             key={ofert}
-                            className='relative right-60 bottom-4 xll:right-0 xl:w-72 xl:h-72 lg:w-60 lg:h-60 sm:pr-2 rounded-full'
+                            className='relative right-60 bottom-4 xll:right-0 xl:w-72 xl:h-72 lg:w-60 lg:h-60 sm:pr-2 2xl:rounded-full'
                             src={descMenu[ofert]?.image}
                             alt=""
                             initial={{ rotate: 180 }}

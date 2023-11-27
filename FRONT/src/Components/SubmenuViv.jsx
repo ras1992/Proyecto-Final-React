@@ -172,7 +172,7 @@ const Submenu = () => {
         {categoria.nombreCategoria}
       </div>
 
-      <div className="grid grid-cols-4 2xl:grid-cols-4 xl:grid-cols-3 xxl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8 pt-8 m-8">
+      <div className="grid grid-cols-4 2xl:grid-cols-4 xl:grid-cols-3 xxl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 pt-8 m-8">
         {data.map((data, key) => (
           <div
             key={key}
