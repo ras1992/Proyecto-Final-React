@@ -29,7 +29,7 @@ function App() {
     // Desactiva el loading después de 6 segundos
     const timeoutId = setTimeout(() => {
       setIsLoading(false);
-    }, 4300);
+    }, 2500);
 
     // Limpia el timeout al desmontar el componente para evitar posibles problemas
     return () => clearTimeout(timeoutId);
