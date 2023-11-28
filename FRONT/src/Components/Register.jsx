@@ -83,10 +83,10 @@ const Register = () => {
 
   return (
     <>
-<div className='h-screen bg-gray-300 bg-bg-login bg-fixed flex items-center justify-center sm:px-1'>
+<div className='h-screen bg-gray-300 bg-bg-login bg-cover bg-no-repeat bg-fixed flex items-center justify-center sm:px-1'>
         <div className='w-[25%] h-auto bg-white flex flex-col  rounded-xl shadow-2xl xll:w-[40%] xll:right-0 xll:top-0 lg:w-[50%] sm:w-[100%] sm:flex sm:flex-col sm:right-0 sm:top-0'>
           <span className='w-full h-20 bg-blue-950 rounded-b-full flex items-center justify-center text-white text-4xl font-lobster'>
-            Welcome
+            Bienvenido
           </span>
           <div className='flex flex-row justify-evenly mt-8'>
             <span className='relative group'>

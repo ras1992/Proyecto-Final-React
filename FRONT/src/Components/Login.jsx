@@ -50,10 +50,10 @@ const Login = () => {
 
   return (
     <>
-      <div className='h-screen bg-gray-300 bg-bg-login bg-fixed flex items-center justify-center sm:px-1'>
+      <div className='h-screen bg-gray-300 bg-bg-login bg-fixed bg-no-repeat bg-cover flex items-center justify-center sm:px-1'>
         <div className='w-[25%] flex flex-col h-auto bg-white   rounded-xl shadow-2xl xll:w-[40%] xll:right-0 xll:top-0 lg:w-[50%] sm:w-[100%] sm:flex sm:flex-col sm:right-0 sm:top-0'>
           <span className='w-full h-20 bg-blue-950 rounded-b-full flex items-center justify-center text-white text-4xl font-lobster'>
-            Welcome
+            Bienvenido
           </span>
           <div className='flex flex-row justify-evenly mt-8'>
             <span className='relative group'>
