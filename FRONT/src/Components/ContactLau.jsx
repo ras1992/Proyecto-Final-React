@@ -20,16 +20,16 @@ const Contact = () => {
 
     return (
         <div
-            id="contact" 
+            id="contact"
         >
-            <div className={`w-full h-auto mt-16 ${(window.location.pathname === '/contact') && 'h-[70vh]'}`}>
-                <h2 className='text-center font-lobster text-blue-950 text-4xl mb-2'>Contacts</h2>
+            <div className={`w-full h-auto mt-16 ${(window.location.pathname === '/contact') && 'h-screen relative top-28 lg:h-[50vh] lg:top-0 md:h-[60vh] md:top-0'}`}>
+                <h2 className='text-center font-lobster text-blue-950 text-5xl mb-2'>Contacts</h2>
                 <div className="flex items-center justify-evenly bg-contact bg-cover bg-no-repeat w-full h-auto px-4 sm:flex-col sm:bg-center">
                     <div className="sm:p-8">
                         {textoContacts.map((data, index) => (
                             <div key={index} className='text-white my-8 xl:my-4 sm:my-4'>
 
-                                <h3 className="font-lobster font-normal text-2xl sm:text-lg">{data.titulo}</h3>
+                                <h3 className="font-lobster font-normal text-4xl sm:text-lg">{data.titulo}</h3>
                                 <div className='flex flex-row items-center'>
                                     <Icon icon={data.icono} hFlip={true} width="20" color='#F56903' />
                                     <p className='text-xl ml-2 xl:text-base sm:text-base'>{data.texto} </p>

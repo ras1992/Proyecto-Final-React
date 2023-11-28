@@ -231,7 +231,7 @@ const BagDropdown = () => {
                       <div className='w-36 flex'>
                         {/* Botón para decrementar cantidad */}
                         <button
-                          className='2xl:w-6 2xl:h-6 rounded-[50%] bg-gray-300 2xl:text-center 2xl:items-center content-center 2xl:text-xl'
+                          className='rounded-[50%] mr-2 w-5 bg-gray-300 content-center 2xl:text-center 2xl:w-6 2xl:h-6 2xl:items-center  2xl:text-xl'
                           onClick={() => handleQuantityChange(index, item.quantity, item.price, item.id, "-")}
                           disabled={item.quantity == 1 ? 'disable' : ''}
                         >
@@ -242,7 +242,7 @@ const BagDropdown = () => {
 
                         {/* Botón para incrementar cantidad */}
                         <button
-                          className='2xl:w-6 2xl:h-6 rounded-[50%] bg-yellow-300 2xl:mr-2 2xl:text-center content-center 2xl:text-xl'
+                          className='2xl:w-6 2xl:h-6 rounded-[50%] w-5 mx-2 bg-yellow-300 2xl:mr-2 2xl:text-center content-center 2xl:text-xl'
                           onClick={() => handleQuantityChange(index, item.quantity, item.price, item.id, "+")}
                         >
                           +

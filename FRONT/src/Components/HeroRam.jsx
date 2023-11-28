@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import fondo from '/otro2.svg'; // Asegúrate de que la ruta sea correcta
 import iconBolso from '/Icons/icons8-bolsa-de-compras-48.png'
-import iconDelivery from '/Icons/icons8-fast-delivery-64.png'
 import { Icon } from '@iconify/react';
 
 import { Link } from "react-router-dom";
@@ -177,9 +175,9 @@ const Hero = () => {
 
     return (
         <>
-            
+
             <div id="hero"
-            className='w-full h-[100vh] bg-gray-100 bg-fondoAzul bg-no-repeat bg-right
+                className='w-full h-[100vh] bg-gray-100 bg-fondoAzul bg-no-repeat bg-right
          xll:bg-right-top xll:h-[60vh] lg:h-[70vh] lg:bg-right-top sm:bg-right-top sm:h-[50vh] sm:bg-fondoAzulSmall xs:h-[60vh]'>
 
                 <div className='flex flex-row justify-around items-center h-full lg:items-center sm:items-center sm:pl-2 '>
@@ -191,7 +189,6 @@ const Hero = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.3, duration: 0.5 }}
                     >
-
 
                         <p className='font-lobster text-7xl text-blue-950 2xl:text-4xl lg:text-3xl sm:text-2xl  xs:whitespace-nowrap'>
                             <strong>{descMenu[ofert]?.title}</strong>
@@ -220,10 +217,10 @@ const Hero = () => {
                                             sm:p-1
                                             md:px-6 md:py-2
                                             2xl:px-6 2xl:py-2 '
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                handleBotonClick(descMenu[ofert]?.id, usuarioId, 1)
-                                            }}>
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleBotonClick(descMenu[ofert]?.id, usuarioId, 1)
+                                }}>
                                 <div className='w-7 h-7 bg-gray-100 rounded-full flex items-center justify-center
                                             sm:w-5 sm:h-5
                                             2xl:w-[3em] 2xl:h-[3em]'>
@@ -238,12 +235,12 @@ const Hero = () => {
                                             sm:text-sm
                                             
                                             '
-                                            >
+                                >
                                     {data.boton1}
                                 </span>
                             </Link>
 
-                            
+
                         </div>
 
                         <div className='flex pt-2'>
@@ -262,7 +259,7 @@ const Hero = () => {
                     <div className=''>
                         <motion.img
                             key={ofert}
-                            className='relative right-60 bottom-4 xll:right-0 xl:w-72 xl:h-72 lg:w-60 lg:h-60 sm:pr-2 2xl:rounded-full'
+                            className='relative right-60 bottom-4 rounded-full w-64 h-64 xll:right-0 xl:w-72 xl:h-72 lg:w-60 lg:h-60 sm:pr-2 sm:w-60 sm:h-60'
                             src={descMenu[ofert]?.image}
                             alt=""
                             initial={{ rotate: 180 }}
@@ -296,7 +293,7 @@ const Hero = () => {
                         <Icon icon="tabler:arrow-big-down-lines" width="40" color="orange" />
                     </div>
 
-                    <div className='flex flex-row bg-white p-4 rounded-xl items-center shadow-2xl sm:bg-blue-950 sm:my-2'>
+                    <div className='flex flex-row bg-white p-4 rounded-xl items-center shadow-2xl sm:bg-blue-950 sm:my-2 lg:mt-10'>
                         <div className=''>
                             <p className='
                         sm:text-white xs:text-sm
@@ -311,9 +308,9 @@ const Hero = () => {
                                     
                     '>{data.cuponText}</p>
                         </div>
-                        <div className='flex flex-col-reverse '>
+                        <div className='flex flex-col-reverse'>
                             <Link to="/register"
-                            className=' bg-yellow-300 shadow-sm shadow-gray-500/50 ml-4 hover:bg-yellow-400 hover:translate-x-[1px] hover:translate-y-[1px] 
+                                className=' bg-yellow-300 shadow-sm shadow-gray-500/50 ml-4 hover:bg-yellow-400 hover:translate-x-[1px] hover:translate-y-[1px] 
                                     h-[2em] rounded-xl flex items-center px-5
                                     lg:px-1
                                     2xl:text-lg

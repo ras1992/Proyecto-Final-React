@@ -2,14 +2,14 @@
 
 ### Link
 
-Link API: https://api-ventacomida.vercel.app/
-Link Web: https://proyecto-final-react-ventacomida.vercel.app/
+- Link API: https://api-ventacomida.vercel.app/
+- Link Web: https://proyecto-final-react-ventacomida.vercel.app/
 
 ### Recomendación
 
-Tener activado el uso de Cache en el explorador para el correcto funcionamiento de la página.
-Tamaño máximo de pantalla recomendado 1440px
-Tamaño óptimo de pantalla 1024px
+- Tener activado el uso de Cache en el explorador para el correcto funcionamiento de la página.
+- Tamaño máximo de pantalla recomendado 1440px
+- Tamaño óptimo de pantalla 1024px
 
 ### Venta de Comida
 
@@ -23,9 +23,9 @@ Datos:
 - El usuario puede registrarse con un nombre, correo electrónico y contraseña.
 
 ### Usuarios Test
--Email: Kuspita20@gmail.com
--Password: 123456
-
+- Email: Kuspita20@gmail.com
+- Password: 123456
+- Todo usuario creado
 ### Diseño Front
 
 - NAVBAR - Login -Register -Carrito/Bolso -Perfil (Pablo)
@@ -47,8 +47,8 @@ Datos:
 - Control de calidad (Lautaro, Juan)
 
 ### Base de datos
-Mongo Atlas
-uri: 
+- Mongo Atlas
+
 
 
 # API del E-commerce
@@ -67,7 +67,7 @@ Esta es una API para gestionar un sistema de E-commerce con funcionalidades como
 
 ### Productos
 
-- `GET /obtenerProductos`: Obtiene todos los productos.
+- `GET /obtenerProductos/obtenerProductos`: Obtiene todos los productos.
 - `GET /obtenerProductosCategoria/:id`: Obtiene productos por categoría.
 - `GET /obtenerProducto/:id`: Obtiene un producto específico por ID.
 - `POST /cargarProducto`: Carga un nuevo producto.

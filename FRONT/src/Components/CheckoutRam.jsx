@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './CheckoutRam'
 import { Link } from "react-router-dom"
-import { Icon } from '@iconify/react';
-import iconTarjeta from '/img/checkOut/icons8-tarjeta-en-uso-50.png'
-import iconDinero from '/img/checkOut/icons8-dinero-30.png'
+import iconTarjeta from '/img/checkOut/icons8-tarjeta-en-uso-50.webp'
+import iconDinero from '/img/checkOut/icons8-dinero-30.webp'
 import Select from 'react-select'
 
 
@@ -496,7 +495,7 @@ const Checkout = () => {
         <>
             <div>
 
-                <div className='2xl:p-4'>
+                <div className='p-4'>
                     <Link to="/">
                         Volver a <strong>Inicio</strong>
                     </Link>
@@ -547,24 +546,24 @@ const Checkout = () => {
 
                     <div>
 
-                        <div className='2xl:text-center'>
+                        <div className='text-center'>
                             <div className='font-lobster text-4xl'>
                                 {dataText.title}
                             </div>
-                            <div className='2xl:p-4 2xl:text-sm'>
+                            <div className='p-4 text-sm'>
                                 <strong className='text-orange-500'>{dataText.subtitle}</strong> <strong>{dataText.number}</strong>
                             </div>
                         </div>
-                        <div className='2xl:grid 2xl:grid-cols-2 sm:grid-cols-1 2xl:gap-4 2xl:justify-center 2xl:p-[1em] 2xl:px-[10.5%]'>
-                            <div className='bg-[#050e28] 2xl:p-2 rounded-lg'>
-                                <div className='bg-white 2xl:p-4 rounded-lg'>
+                        <div className='grid grid-cols-2 sm:grid-cols-1 gap-4 justify-center p-[1em] px-[10.5%]'>
+                            <div className='bg-[#050e28] p-2 rounded-lg'>
+                                <div className='bg-white p-4 rounded-lg'>
                                     <p>{dataText.deTitle}</p>
                                     <div>
-                                        <input type="checkbox" id="checkbox" checked={checkboxSeleccionado} onChange={handleCheckboxChange} className='' /><span className='2xl:p-2' >{dataText.deOp1}</span>
+                                        <input type="checkbox" id="checkbox" checked={checkboxSeleccionado} onChange={handleCheckboxChange} className='' /><span className='p-2' >{dataText.deOp1}</span>
                                     </div>
 
                                     <div>
-                                        <input type="checkbox" id="checkbox" checked={!checkboxSeleccionado} onChange={handleCheckboxChange} className='' /><span className='2xl:p-2' >{dataText.deOp2}</span>
+                                        <input type="checkbox" id="checkbox" checked={!checkboxSeleccionado} onChange={handleCheckboxChange} className='' /><span className='p-2' >{dataText.deOp2}</span>
                                     </div>
                                 </div>
 
@@ -574,19 +573,19 @@ const Checkout = () => {
                                 {/* hola */}
                             </div>
 
-                            <div className={`bg-gray-500 2xl:p-2 rounded-lg ${checkboxSeleccionado ? 'visible' : 'hidden'}`}>
-                                <div className='bg-white 2xl:p-4 rounded-lg h-full'>
+                            <div className={`bg-gray-500 p-2 rounded-lg ${checkboxSeleccionado ? 'visible' : 'hidden'}`}>
+                                <div className='bg-white p-4 rounded-lg h-full'>
                                     <p>{dataText.deTitle}</p>
-                                    <form className='2xl:flex 2xl:flex-col 2xl:items-cente'>
-                                        <input className='2xl:w-full 2xl:mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adPhone} value={userData.phone} name="phone" onChange={(e) => setUserData({ ...userData, phone: e.target.value })} />
-                                        <input className='2xl:w-full 2xl:mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adStreet} value={userData.street} name="street" onChange={(e) => setUserData({ ...userData, street: e.target.value })} />
-                                        <input className='2xl:w-full 2xl:mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adHouse} value={userData.house} name="house" onChange={(e) => setUserData({ ...userData, house: e.target.value })} />
-                                        <div className='flex 2xl:justify-center 2xl:items-center'>
-                                            <input className='2xl:w-full 2xl:mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adEntrance} value={userData.entrance} name="entrance" onChange={(e) => setUserData({ ...userData, entrance: e.target.value })} />
+                                    <form className='flex flex-col items-cente'>
+                                        <input className='w-full mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adPhone} value={userData.phone} name="phone" onChange={(e) => setUserData({ ...userData, phone: e.target.value })} />
+                                        <input className='w-full mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adStreet} value={userData.street} name="street" onChange={(e) => setUserData({ ...userData, street: e.target.value })} />
+                                        <input className='w-full mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adHouse} value={userData.house} name="house" onChange={(e) => setUserData({ ...userData, house: e.target.value })} />
+                                        <div className='flex justify-center items-center'>
+                                            <input className='w-full mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adEntrance} value={userData.entrance} name="entrance" onChange={(e) => setUserData({ ...userData, entrance: e.target.value })} />
                                             <input type="checkbox" id="checkbox" name="housePrivate" checked={userData.housePrivate} onChange={(e) => { setUserData({ ...userData, housePrivate: e.target.checked }) }} /> <span className='text-sm'>{dataText.adCheck}</span>
                                         </div>
-                                        <input className='2xl:w-full 2xl:mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adComment} value={userData.commentOrder} name="commentOrder" onChange={(e) => setUserData({ ...userData, commentOrder: e.target.value })} />
-                                        <button className='bg-gray-200 2xl:rounded-xl 2xl:h-[2.5em] 2xl:w-full my-[1em] shadow-md shadow-gray-600'
+                                        <input className='w-full mb-4 border-b bg-transparent focus:bg-transparent placeholder:text-gray-600' type='text' placeholder={dataText.adComment} value={userData.commentOrder} name="commentOrder" onChange={(e) => setUserData({ ...userData, commentOrder: e.target.value })} />
+                                        <button className='bg-gray-200 rounded-xl h-[2.5em] w-full my-[1em] shadow-md shadow-gray-600'
                                             onClick={() => enviarFormulario()}
                                         >
                                             Save edit
@@ -595,8 +594,8 @@ const Checkout = () => {
                                 </div>
                             </div>
 
-                            <div className='bg-gray-500 2xl:p-2 rounded-lg'>
-                                <div className='bg-white 2xl:p-3  2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center rounded-lg'>
+                            <div className='bg-gray-500 p-2 rounded-lg'>
+                                <div className='bg-white p-3  flex flex-col justify-center items-center rounded-lg'>
                                     {carrito.length > 0 && (
                                         <div className='max-h-[400px] min-w-[80%] overflow-y-auto'>
                                             {carrito.map((item, index) => (
@@ -615,18 +614,18 @@ const Checkout = () => {
                                                             <div className='w-36 flex'>
                                                                 {/* Botón para decrementar cantidad */}
                                                                 <button
-                                                                    className='2xl:w-6 2xl:h-6 rounded-[50%] bg-gray-300 2xl:text-center 2xl:items-center content-center 2xl:text-xl'
+                                                                    className='w-6 h-6 rounded-[50%] bg-gray-300 text-center items-center content-center text-xl'
                                                                     onClick={() => handleQuantityChange(index, item.quantity, item.price, item.id, "-")}
                                                                     disabled={item.quantity == 1 ? 'disable' : ''}
                                                                 >
                                                                     -
                                                                 </button>
 
-                                                                <span className='2xl:mx-2'>{item.quantity > 0 ? item.quantity : 1}</span>
+                                                                <span className='mx-2'>{item.quantity > 0 ? item.quantity : 1}</span>
 
                                                                 {/* Botón para incrementar cantidad */}
                                                                 <button
-                                                                    className='2xl:w-6 2xl:h-6 rounded-[50%] bg-yellow-300 2xl:mr-2 2xl:text-center content-center 2xl:text-xl'
+                                                                    className='w-6 h-6 rounded-[50%] bg-yellow-300 mr-2 text-center content-center text-xl'
                                                                     onClick={() => handleQuantityChange(index, item.quantity, item.price, item.id, "+")}
                                                                 >
                                                                     +
@@ -707,7 +706,7 @@ const Checkout = () => {
                             <div></div>
                             <div className='bg-gray-500 2xl:p-2 rounded-lg '>
                                 <div className='bg-white 2xl:p-4 rounded-lg h-full'>
-                                    <strong>{dataText.titlePay}</strong>
+                                    <p className='text-center mb-2'><strong >{dataText.titlePay}</strong></p>
                                     <div className='flex flex-row place-content-around  2xl:items-center'>
 
                                         <Link onClick={() => setPagoModal(!pagoModal)} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-38 h-18 rounded-lg flex items-center'>

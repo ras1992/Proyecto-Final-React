@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
-import footerLogo from '/img/footer/logofooter.png'
-import creditCards from '/img/footer/creditcards.png'
+import footerLogo from '/img/footer/logofooter.webp'
+import creditCards from '/img/footer/creditcards.webp'
 
 
 const Footer = () => {
@@ -30,12 +30,12 @@ const Footer = () => {
 
   return (
     <>
-      <footer className='bg-black w-full h-64 bg-footerBg flex flex-col xxl:bg-posright xl:bg-footerBgXl sm:bg-center'>
+      <footer className='bg-black w-full h-auto bg-footerBg bg-center py-3 flex flex-col xxl:bg-posright xl:bg-footerBgXl sm:bg-center'>
 
         <div className='flex flex-row items-center justify-between h-full mx-6 sm:mx-4'>
-          <div className='sm:mt-4'>
+          <div className='mb-4 sm:mt-4'>
             {Object.entries(footerMenu).map(([path, label]) => (
-              <li key={path}>
+              <li key={path} className='list-none'>
                 <a className='text-white mb-3 xs:mb-2' onClick={() => scrollToHome(path)}>{label}</a>
               </li>
             ))}

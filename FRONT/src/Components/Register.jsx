@@ -83,7 +83,7 @@ const Register = () => {
 
   return (
     <>
-      <div className='h-screen bg-gray-300 bg-bg-login flex items-center justify-center sm:px-1'>
+<div className='h-screen bg-gray-300 bg-bg-login bg-fixed flex items-center justify-center sm:px-1'>
         <div className='w-[25%] h-auto bg-white flex flex-col  rounded-xl shadow-2xl xll:w-[40%] xll:right-0 xll:top-0 lg:w-[50%] sm:w-[100%] sm:flex sm:flex-col sm:right-0 sm:top-0'>
           <span className='w-full h-20 bg-blue-950 rounded-b-full flex items-center justify-center text-white text-4xl font-lobster'>
             Welcome
@@ -120,7 +120,6 @@ const Register = () => {
           </form>
           <div>
             <p className='text-blue-900 text-sm mt-4 text-center'><span className='text-orange-600'>-5% </span>on everything for registered users<br />Get a <span className='text-orange-600'>discount cupon</span></p>
-            <p className='text-blue-900 text-sm mt-4 text-center'><span className='text-orange-600'>GOOGLE</span></p>
           </div>
           <div className='flex justify-end pb-2 mr-2'>
             <div className='w-10 h-10 bg-white shadow-sm shadow-gray-600 rounded-full flex items-center justify-center cursor-pointer'>

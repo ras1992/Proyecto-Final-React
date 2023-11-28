@@ -11,8 +11,8 @@ export default {
         'fondoAzulSmall': "url('/otro3.png')",
         'bg-login': "url('../img/nav/bg-login.avif')",
         'contact': "url('../img/contacts/wave.svg')",
-        'footerBg': 'url(../img/footer/footerbg.png)',
-        'footerBgXl': 'url(../img/footer/bg1024.png)',
+        'footerBg': 'url(../img/footer/footerbg.webp)',
+        'footerBgXl': 'url(../img/footer/bg1024.webp)',
       },
       fontFamily: {
         roboto: ['Roboto', 'sans'],
